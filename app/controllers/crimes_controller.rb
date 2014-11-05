@@ -23,7 +23,7 @@ class CrimesController < ApplicationController
       age  = [[age, 0].max, 90].min / 90.0
 
       (1.0 - Math.log(10.0 / radius * crime.distance, 10)) * (age ** 3)
-    end.compact.sum
+    end.compact.sum || 100
 
     score = 100.0 - (100.0 / crimes.count(:all) * score)
 

@@ -1,28 +1,11 @@
-== README
+# Drivewise
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## API
 
-Things you may want to cover:
+### Crime Scores
 
-* Ruby version
+Returns a score and grade for a given area based on crimes there.
 
-* System dependencies
+Example score for Belfast:
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-
-
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
+`/crimes/score?latitude=54.597&longitude=-5.930&radius=2`
